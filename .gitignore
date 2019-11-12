@@ -1,0 +1,9 @@
+models/
+features/
+model/
+data/
+__pycache__/
+.vscode/
+.ipynb_checkpoints/
+checkpoints/
+*.pkl
