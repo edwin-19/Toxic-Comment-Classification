@@ -1,5 +1,5 @@
 # Toxic comment classification
-Repo was done as a test for deep nlp using the [toxic comment classification]((https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)) data from kaggle.
+Repo was done as a test for deep nlp using the [toxic comment classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)) data from kaggle.
 
 Another main motivation was to test out deep NLP models those used were:
 - BERT
@@ -9,7 +9,7 @@ Another main motivation was to test out deep NLP models those used were:
 NOTE: Check output for results, contains fastai classification and pooled rnn results (both output sigmoid ouput (each class has percentage))
 
 # Test BERT
-Download model [here]((https://drive.google.com/open?id=1bRiOF_CkyHRDZXFW1apf38Yobku5iDvn))
+Download model [here](https://drive.google.com/open?id=1bRiOF_CkyHRDZXFW1apf38Yobku5iDvn)
 ```sh
 cd bert
 python bert_test.py --text You are dumb # For single predict
