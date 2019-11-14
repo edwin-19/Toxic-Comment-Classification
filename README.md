@@ -1,5 +1,5 @@
 # Toxic comment classification
-Repo was done as a test for deep nlp using the [toxic comment classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)) data from kaggle.
+Repo was done as a test for deep nlp using the [toxic comment classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) data from kaggle.
 
 Another main motivation was to test out deep NLP models those used were:
 - BERT - [paper](https://arxiv.org/abs/1810.04805) , [library](https://github.com/maknotavailable/pytorch-pretrained-BERT)
