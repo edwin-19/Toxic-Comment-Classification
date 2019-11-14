@@ -20,6 +20,16 @@ python bert_test.py --interactive # For console input
 ```
 
 # BERT Model Training
+Trained 3 times with 2 epochs each
+
+## First cycle
+![file_structure](https://github.com/edwin-19/Toxic-Comment-Classification/blob/master/assets/train-1.png?raw=true)  
+
+## Second cycle
+![file_structure](https://github.com/edwin-19/Toxic-Comment-Classification/blob/master/assets/train-2.png?raw=true)  
+
+## Third cycle
+![file_structure](https://github.com/edwin-19/Toxic-Comment-Classification/blob/master/assets/train-3.png?raw=true)  
 
 # Enviroment
 - Ubuntu 18.04
