@@ -2,14 +2,27 @@
 Repo was done as a test for deep nlp using the [toxic comment classification](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data)) data from kaggle.
 
 Another main motivation was to test out deep NLP models those used were:
-- BERT
+- BERT - [paper](https://arxiv.org/abs/1810.04805) , [library](https://github.com/maknotavailable/pytorch-pretrained-BERT)
 - ULMFiT
 - PooledRNN
 
 NOTE: Check output for results, contains fastai classification and pooled rnn results (both output sigmoid ouput (each class has percentage))
 
-# Test BERT
-Download model [here](https://drive.google.com/open?id=1bRiOF_CkyHRDZXFW1apf38Yobku5iDvn)
+# Install 
+```sh
+git clone 
+
+pip install -r requirements.txt
+```
+Download the toxic comment classification dataset from kaggle
+
+Put in the folder
+data/toxic_comment
+
+# BERT
+Make sure to put the fine tuned model inside the model folder within the bert folder
+
+NOTE - for bert training check the notebook out
 ```sh
 cd bert
 python bert_test.py --text You are dumb # For single predict
@@ -18,6 +31,19 @@ or
 
 python bert_test.py --interactive # For console input
 ```
+
+# Pooled RNN
+```sh
+python train_attention.py # train
+
+python eval.py # Eval or generate csv output
+```
+
+# Models
+| Model  | Download Link|
+| ------------- | ------------- |
+| BERT  | [Link](https://drive.google.com/open?id=1i5946rQuB8RWnZmHy6_advdZ6JoyMors)  |
+| Pooled RNN  | [Link](https://drive.google.com/open?id=1UGcwDIXxwzIO9RHlDdy8L_Xt0tEeg1Fo) |
 
 # BERT Model Training
 Trained 3 times with 2 epochs each
@@ -49,3 +75,10 @@ Trained 3 times with 2 epochs each
 - [x] Train BERT model and test output
 - [ ] Train FASTAi ULMFiT and test output
 - [ ] Move from pytorch-bert-pretrained model package to transformers packege(latest)
+
+# Acknowledgement
+- BERT and Fast AI code was heavily inspired by this repo check out the implementation [here](https://www.kaggle.com/abhikjha/jigsaw-toxicity-bert-with-fastai-and-fastai/notebook)
+
+- Pooled RNN Keras code was also heavily inspired by the following repo check it out [here](https://github.com/zake7749/DeepToxic)
+
+- For EDA the folowing github repo served as a backbone for the project those interested check it out [here](https://github.com/anmolchawla/Kaggle-Toxic-Comment-Classification-Challenge)
