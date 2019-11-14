@@ -8,6 +8,19 @@ Another main motivation was to test out deep NLP models those used were:
 
 NOTE: Check output for results, contains fastai classification and pooled rnn results (both output sigmoid ouput (each class has percentage))
 
+# Test BERT
+Download model [here]((https://drive.google.com/open?id=1bRiOF_CkyHRDZXFW1apf38Yobku5iDvn))
+```sh
+cd bert
+python bert_test.py --text You are dumb # For single predict
+
+or 
+
+python bert_test.py --interactive # For console input
+```
+
+# BERT Model Training
+
 # Enviroment
 - Ubuntu 18.04
 - Cuda 9
@@ -23,6 +36,6 @@ NOTE: Check output for results, contains fastai classification and pooled rnn re
 - torchvision=0.3.0
 
 # ToDO
-- [ ] Train BERT model and test output
+- [x] Train BERT model and test output
 - [ ] Train FASTAi ULMFiT and test output
 - [ ] Move from pytorch-bert-pretrained model package to transformers packege(latest)
